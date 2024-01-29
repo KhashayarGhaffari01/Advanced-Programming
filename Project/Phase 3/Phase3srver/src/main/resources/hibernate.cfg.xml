@@ -1,0 +1,25 @@
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Database connection setting -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/khwittergram</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">khgh1380</property>
+
+
+        <!-- SQl dialect -->
+        <property name="dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <!-- update the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <property name="connection.pool_size">1</property>
+
+        <mapping class="model.Date"/>
+        <mapping class="model.User"/>
+        <mapping class="util.Token"/>
+
+
+
+    </session-factory>
+</hibernate-configuration>
