@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="603.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.LoginPageController">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="335.0">
+         <image>
+            <Image url="@../../../../../photos%20for%20khw/PicsArt_05-07-01.17.54.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameTextField" layoutX="60.0" layoutY="264.0" prefHeight="25.0" prefWidth="149.0" />
+      <PasswordField fx:id="passwordTextField" layoutX="60.0" layoutY="308.0" />
+      <Button fx:id="loginButton" blendMode="OVERLAY" layoutX="127.0" layoutY="360.0" mnemonicParsing="false" onAction="#pressLogonAct" prefHeight="50.0" prefWidth="83.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backButton" blendMode="OVERLAY" layoutX="126.0" layoutY="426.0" mnemonicParsing="false" onAction="#pressBackAct" prefHeight="50.0" prefWidth="83.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="ErrorImage" fitHeight="25.0" fitWidth="212.0" layoutX="60.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
